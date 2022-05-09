@@ -3,21 +3,23 @@ import React from 'react';
 function Home() {
   return (
     <div className="min-h-screen">
-        <header className="flex items-center justify-between py-4">
-            <a href="#home" className="hover:opacity-80">
-                <img src="/assets/images/logo.png" className="w-48" alt="" />
-            </a>
-            <div className="hidden md:flex items-center gap-x-6">
-                <a href="#features" rel='' className="hover:text-[#fc5c04]">Features</a>
-                <a href="#about" className="hover:text-[#fc5c04]">About Us</a>
-                <a href="#pricing" className="hover:text-[#fc5c04]">Pricing</a>
-                <a href="#feedback" className="hover:text-[#fc5c04]">Feedback</a>
-            </div>
-            <button className="p-2 md:p-3 bg-[#3f37c9] text-[12px] text-white rounded-md hover:opacity-80">
-                Demander une démo
-            </button>
-        </header>
-        <main className="flex items-center min-h-screen justify-center">
+        <div className="shadow-md">
+            <header className="flex items-center justify-between py-2 px-6 md:px-8 max-w-7xl mx-auto">
+                <a href="#home" className="hover:opacity-80">
+                    <img src="/assets/images/logo.png" className="w-48" alt="" />
+                </a>
+                <div className="hidden md:flex items-center gap-x-6">
+                    <a href="#features" rel='' className="hover:text-[#fc5c04]">Features</a>
+                    <a href="#about" className="hover:text-[#fc5c04]">About Us</a>
+                    <a href="#pricing" className="hover:text-[#fc5c04]">Pricing</a>
+                    <a href="#feedback" className="hover:text-[#fc5c04]">Feedback</a>
+                </div>
+                <button className="p-2 md:p-3 bg-[#3f37c9] text-[12px] text-white rounded-md hover:opacity-80">
+                    Demander une démo
+                </button>
+            </header>
+        </div>
+        <main className="flex items-center min-h-screen max-w-7xl mx-auto justify-center px-6 md:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-12">
                 <div className="flex-col space-y-6">
                     <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-10">
@@ -43,7 +45,7 @@ function Home() {
                     </div>
                 </div>
                 <div className="">
-                    <img src="https://img.freepik.com/free-vector/3d-handhold-phone-mobile-app-development-application-building-app-testing-ui-ux-web-design-abstract-3d-object-background-3d-vector-illustration_145666-1589.jpg?w=996" alt="" className="" />
+                    <img src="https://img.freepik.com/free-photo/beautiful-hacker-girl-working-with-another-dangerous-cyber-criminals-hackers-centre_482257-21839.jpg?t=st=1652068349~exp=1652068949~hmac=150de24b8584e6e3a0e4c7b6c8da7b6d6825d8c6457a6e4694e489a4dfca6772&w=1380" alt="" className="" />
                 </div>
             </div>
         </main>
