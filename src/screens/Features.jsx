@@ -25,7 +25,7 @@ function Features() {
                     <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-10">
                         Développement Web.
                     </h1>
-                    <p className="text-sm mr-0 md:mr-12">
+                    <p className="text- mr-0 md:mr-12">
                         Vous aide à organiser vos revenus et à exprimer, Vous aide à organiser vos revenus et à exprimer.
                     </p>
                     <div className="grid grid-cols-2 gap-x-4">

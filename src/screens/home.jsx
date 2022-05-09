@@ -23,7 +23,7 @@ function Home() {
                     <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-10">
                         Développement de conception Web et mobile.
                     </h1>
-                    <p className="text-sm">
+                    <p className="text-">
                         Vous aide à organiser vos revenus et à exprimer.
                     </p>
                     <div className="flex-wrap gap-y-4 flex items-center gap-x-2">
