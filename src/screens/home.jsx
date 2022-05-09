@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function Home() {
+    const [isShow, setIsShow] = useState(true);
+    
   return (
-    <div className="min-h-screen">
-        <div className="shadow-md">
+    <div className="min-h-screen relative">
+        <div className="shadow-md z-40">
             <header className="flex items-center justify-between py-2 px-6 md:px-8 max-w-7xl mx-auto">
                 <a href="#home" className="hover:opacity-80">
                     <img src="/assets/images/logo.png" className="w-48" alt="" />
@@ -14,9 +16,23 @@ function Home() {
                     <a href="#pricing" className="hover:text-[#fc5c04]">Pricing</a>
                     <a href="#feedback" className="hover:text-[#fc5c04]">Feedback</a>
                 </div>
-                <button className="p-2 md:p-3 bg-[#3f37c9] text-[12px] text-white rounded-md hover:opacity-80">
-                    Demander une démo
-                </button>
+                <div className="space-x-4 flex items-center"
+                    onClick={() => setIsShow(!isShow)}
+                >
+                    <button className="p-2 md:p-3 bg-secondary text-[12px] text-white rounded-md hover:opacity-80">
+                        Demander une démo
+                    </button>
+                    <div className="block md:hidden cursor-pointer">
+                        {isShow ? <svg xmlns="http://www.w3.org/2000/svg" 
+                            class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg> : <svg xmlns="http://www.w3.org/2000/svg" 
+                                class="h-6 w-6 text-[#000]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                            >
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>}
+                    </div>
+                </div>
             </header>
         </div>
         <main className="flex items-center min-h-screen max-w-7xl mx-auto justify-center px-6 md:px-8">
@@ -29,7 +45,7 @@ function Home() {
                         Vous aide à organiser vos revenus et à exprimer.
                     </p>
                     <div className="flex-wrap gap-y-4 flex items-center gap-x-2">
-                        <button className="p-2 md:p-3 bg-[#3f37c9] text-[12px] text-white rounded-md flex items-center gap-x-2 hover:opacity-80">
+                        <button className="px-2 py-3 md:p-3 bg-[#3f37c9] text-[12px] text-white rounded-md flex items-center gap-x-2 hover:opacity-80">
                             <p className="">
                                 Essayez la démo gratuite
                             </p>
@@ -49,6 +65,24 @@ function Home() {
                 </div>
             </div>
         </main>
+        {/* {isShow && ( */}
+            <div className={`shadow-md flex-col md:hidden absolute top-20 right-0 w-1/2 h-screen pt-12 duration-300 bg-white z-30 transition ease-in-out ${isShow ? "translate-x-0" : "translate-x-full"}`}>
+                <div className="grid grid-cols-1 text-center font-[500] space-y-6">
+                    <a href="#features" rel='' className="hover:text-[#fc5c04]" 
+                        onClick={() => setIsShow(!isShow)}
+                    >Features</a>
+                    <a href="#about" className="hover:text-[#fc5c04]" 
+                        onClick={() => setIsShow(!isShow)}
+                    >About Us</a>
+                    <a href="#pricing" className="hover:text-[#fc5c04]" 
+                        onClick={() => setIsShow(!isShow)}
+                    >Pricing</a>
+                    <a href="#feedback" className="hover:text-[#fc5c04]" 
+                        onClick={() => setIsShow(!isShow)}
+                    >Feedback</a>
+                </div>
+            </div>
+        {/* )} */}
     </div>
   )
 }

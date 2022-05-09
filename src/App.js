@@ -6,7 +6,7 @@ import Home from './screens/home';
 
 function App() {
   return (
-    <div className="App font-extralight">
+    <div className="App h-auto font-extralight">
       <Home />
       <FeaturesApp />
       <Features />
