@@ -1,47 +1,29 @@
 import React from 'react';
 
-function Features() {
-    const data = [
-        {
-            title: "React & Vue Js",
-            text: "Vous aide à organiser vos revenus et à exprimer",
-            icon: "/assets/icons/react.svg",
-            color: "#3f37c9",
-        },
-        {
-            title: "UI & UX Design",
-            text: "Vous aide à organiser vos revenus et à exprimer, Vous aide à ",
-            icon: "/assets/icons/design.svg",
-            color: "#fc5c04",
-        },
-    ];
+function Features({ data, title, text, image }) {
 
   return (
-    <div id="features" className="pb-24 md:pb-32 px-6 md:px-8 mx-auto max-w-7xl">
+    <div id="features" className="pb-12 mx-auto max-w-7xl">
         <main className="flex items-cente justify-center">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12">
-                <div className="flex-col space-y-5">
-                    <p className="">Features</p>
-                    <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-10">
-                        Développement Web.
+            <div className="flex-col space-y-5 w-full shadow-md rounded-br-3xl">
+                <img src={image} alt="" className="h-[200px] w-full bg-cover bg-center object-cover" />
+                <div className="p-4 space-y-5">
+                    <h1 className="text-3xl font-bold leading-8">
+                            {title}
                     </h1>
-                    <p className="text- mr-0 md:mr-12">
+                    <p className="font-semibold text-gray-700">
                         Vous aide à organiser vos revenus et à exprimer, Vous aide à organiser vos revenus et à exprimer.
                     </p>
-                    <div className="grid grid-cols-2 gap-x-4">
+                    <div className="grid grid-cols-2 gap-x-4 w-full">
                         {data.map((info, index) =>  (
                             <div className="space-y-4" key={index}>
-                                <div className={`bg-[${info.color}] p-2 rounded-full  w-12 h-12 flex items-center`}>
-                                    <img src={info.title.includes('Design') ? "assets/icons/design.svg" : "assets/icons/react.svg"} alt={info.title} className="w-12 h-12" />
+                                <div className={`bg-gray-100 p-2 rounded-full  w-12 h-12 flex items-center`}>
+                                    <img src={info.icon} alt={info.title} className="w-12 h-12" />
                                 </div>
-                                <h2 className="font-bold">{info.title}</h2>
-                                <p className="">{info.text}</p>
+                                <h2 className="font-semibold">{info.title}</h2>
                             </div>
                         ))}
                     </div>
-                </div>
-                <div className="h-full flex-1">
-                    <img src="https://dailymockup.com/wp-content/uploads/edd/2019/02/3D-Web-showcase-1000x662.jpg?ezimgfmt=ng%3Awebp%2Fngcb1%2Frs%3Adevice%2Frscb1-1" alt="" className="h-full object-cover object-center flex-1" />
                 </div>
             </div>
         </main>
