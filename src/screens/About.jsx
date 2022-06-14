@@ -15,7 +15,7 @@ function About() {
                         />
                     </div>
                     <div className="object-cover bg-cover h-[220px] lg:h-[300px] rounded-lg shadow-lg"
-                        style={{ backgroundImage: `url("assets/images/about3.webp")` }}
+                        style={{ backgroundImage: `url("assets/images/about3.jpg")` }}
                     ></div>
                 </div>
                 <div className="flex-col space-y-5 my-auto">

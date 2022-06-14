@@ -4,8 +4,8 @@ function Home() {
     const [isShow, setIsShow] = useState(false);
     
   return (
-    <div className="relative">
-        <div className="shadow-md z-40">
+    <div className="relative overflow-hidden">
+        <div className="z-40">
             <header className="flex items-center justify-between px-6 md:px-8 max-w-7xl mx-auto">
                 <a href="#home" className="hover:opacity-80">
                     <img src="/assets/images/logo.png" className="w-48" alt="" />
@@ -16,13 +16,15 @@ function Home() {
                     <a href="#pricing" className="hover:text-[#fc5c04]">Pricing</a>
                     <a href="#feedback" className="hover:text-[#fc5c04]">Feedback</a>
                 </div>
-                <div className="space-x-4 flex items-center"
-                    onClick={() => setIsShow(!isShow)}
-                >
-                    <button className="p-2 md:p-3 bg-secondary text-[12px] text-white rounded-md hover:opacity-80">
-                        Contacter-Nous
-                    </button>
-                    <div className="block md:hidden cursor-pointer">
+                <div className="space-x-4 flex items-center">
+                    <a href="#contact">
+                        <div className="p-2 md:p-3 bg-primary text-[12px] text-white rounded-md hover:opacity-80">
+                            Contacter-Nous
+                        </div>
+                    </a>
+                    <div className="block md:hidden cursor-pointer"
+                        onClick={() => setIsShow(!isShow)}
+                    >
                         {isShow ? <svg xmlns="http://www.w3.org/2000/svg" 
                             class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -37,9 +39,9 @@ function Home() {
         </div>
         <div className="py-20 md:py-28 flex items-center justify-center bg-blue-90">
             <main className="flex items-center max-w-7xl mx-auto justify-center px-6 md:px-8">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-16">
                     <div className="flex-col space-y-8 my-auto">
-                        <h1 className="text-4xl md:text-4xl lg:text-6xl font-bold leading-10">
+                        <h1 className="text-4xl font-extrabold leading-10 tracking-tight text-gray-900 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl">
                             Nou sommes une agence en développement de conception Web et mobile.
                         </h1>
                         <p className="font-semibold text-gray-500">
@@ -47,7 +49,7 @@ function Home() {
                               Lorem ipsum es el texto que se usa habitualmente en diseño gráfico o de moda en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto final.
                         </p>
                         <div className="flex-wrap gap-y-4 flex items-center gap-x-2">
-                            <button className="p-3 md:p-4 bg-[#3f37c9] text-[12px] text-white rounded-md flex items-center gap-x-2 hover:opacity-80">
+                            <button className="p-3 md:p-4 bg-primary text-[12px] text-white rounded-md flex items-center gap-x-2 hover:opacity-80">
                                 <p className="">
                                     Voir la démo
                                 </p>

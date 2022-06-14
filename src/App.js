@@ -1,9 +1,9 @@
 import React from 'react';
 import Footer from './components/footer';
 import About from './screens/About';
-import Home from './screens/home';
+import Contact from './screens/Contact';
+import Home from './screens/Home';
 import Portfolio from './screens/Portfolio';
-import Pricing from './screens/Pricing';
 import Services from './screens/Services';
 import Team from './screens/Team';
 import Testimonial from './screens/Testimonial';
@@ -16,8 +16,8 @@ function App() {
         <Services />
         <Portfolio />
         <Team />
-        <Pricing />
         <Testimonial />
+        <Contact />
         <Footer />
     </div>
   );

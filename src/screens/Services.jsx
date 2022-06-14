@@ -7,8 +7,8 @@ function Services() {
     return (
         <div id="features" className="max-w-7xl mx-auto py-8">
             <TopTitle 
-                title="What We Offer"
-                subTitile="Project Planning"
+                title="Ce Que Nous Offrons"
+                subTitile="Nos Services"
                 text="We help our clients to build their dream project"
             />
             <div className="grid md:grid-cols-3 pt-6 gap-8 place-items-center px-6">

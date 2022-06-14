@@ -7,7 +7,7 @@ export const projects = [
     },
     {
         image: "assets/images/insta.png",
-        title: "Instagram-Cloning",
+        title: "Instagram-Clone",
         "desc": "Développement",
         url: "https://pic-instagram.vercel.app/",
     },
@@ -31,7 +31,7 @@ export const projects = [
     },
     {
         image: "assets/images/eco.jpg",
-        title: "Shopy-My Ecommerce",
+        title: "Shopy-My",
         "desc": "Développement",
         url: "https://tracking-user.netlify.app/",
     },

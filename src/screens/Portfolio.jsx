@@ -7,14 +7,14 @@ function Portfolio() {
     const data = ["All Projects", "Applications", "Développement", "Design"];
     
     return (
-        <div className="bg-gray-100">
+        <div id="portfolio" className="bg-gray-100">
             <div className="max-w-7xl mx-auto px-6 py-10">
                 <TopTitle 
-                    title="Our Recent Projects"
-                    subTitile="Our Portfolio"
+                    title="Nos Projets Récents"
+                    subTitile="Notre Portfolio"
                     text="We help our clients to build their dream project"
                 />
-                <div className="py-4 flex items-center justify-center gap-6">
+                <div className="py-4 flex flex-wrap items-center justify-center gap-6">
                     { data.map((info, index) => (
                         <div key={index}
                             onClick={ () => setDataIndex(index) }
@@ -31,10 +31,10 @@ function Portfolio() {
                             className=""
                         >
                             <img src={info.image} alt="" className="rounded-xl h-[300px] w-full bg-cover object-cover shadow-md" />
-                            <div className="flex items-center justify-center px-8 mb-8">
-                                <div className="bg-white rounded-lg shadow-lg z-30 gap-y-2 w-full py-6 grid place-items-center -mt-20">
+                            <div className="flex items-center justify-center px-6 lg:px-8 mb-8">
+                                <div className="bg-white rounded-lg shadow-lg z-30 gap-y-2 w-full py-6 grid place-items-center -mt-20 px-4">
                                     <div className="text-[#fc5c04] font-semibold">{ info.desc }</div>
-                                    <span className="text-2xl font-bold">{info.title}</span>
+                                    <span className="text-xl lg:text-2xl font-bold">{info.title}</span>
                                     <div className="pt-4 mb-3">
                                         <a href={info.url} target="_blank" rel="noreferrer" className="rounded-lg border px-6 py-3">Voir Details</a>
                                     </div>
