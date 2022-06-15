@@ -13,7 +13,7 @@ function Home() {
                 <div className="hidden md:flex items-center gap-x-6">
                     <a href="#features" rel='' className="hover:text-[#fc5c04]">Features</a>
                     <a href="#about" className="hover:text-[#fc5c04]">About Us</a>
-                    <a href="#pricing" className="hover:text-[#fc5c04]">Pricing</a>
+                    <a href="#pricing" className="hover:text-[#fc5c04]">Contact</a>
                     <a href="#feedback" className="hover:text-[#fc5c04]">Feedback</a>
                 </div>
                 <div className="space-x-4 flex items-center">
