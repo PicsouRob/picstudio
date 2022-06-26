@@ -3,7 +3,7 @@ import Player from '../components/Player';
 
 function Home() {
     const [ isShow, setIsShow ] = useState(false);
-    const [ isPlaying, setIsPlaying ] = useState(true);
+    const [ isPlaying, setIsPlaying ] = useState(false);
     
     return (
         <div className="relative overflow-hidden">
