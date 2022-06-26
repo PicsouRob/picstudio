@@ -10,7 +10,7 @@ function footer() {
                 <img src="/assets/images/logo.png" className="w-48" alt="" />
             </a>
             <p className="text-lg">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit ducimus ipsa quo voluptatum veritatis quia.
+                Nou sommes une agence en développement de conception Web et mobile.
             </p>
             <div className="flex gap-x-3 md:gap-x-6">
                 {socialLink.map((data, index) => (

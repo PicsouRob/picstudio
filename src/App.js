@@ -10,7 +10,7 @@ import Testimonial from './screens/Testimonial';
 
 function App() {
   return (
-    <div className="App h-auto font-extralight">
+    <div className="App h-auto font-normal">
         <Home />
         <About />
         <Services />
