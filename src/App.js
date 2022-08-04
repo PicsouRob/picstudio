@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from './components/footer';
+import Footer from './components/Footer';
 import About from './screens/About';
 import Contact from './screens/Contact';
 import Home from './screens/Home';
@@ -10,7 +10,7 @@ import Testimonial from './screens/Testimonial';
 
 function App() {
   return (
-    <div className="App h-auto font-normal">
+    <div className="App h-auto text-slate-800 font-sans">
         <Home />
         <About />
         <Services />

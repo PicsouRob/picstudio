@@ -10,19 +10,19 @@ function Home() {
             { isPlaying && (
                 <Player setIsPlaying={ setIsPlaying } isPlaying={ isPlaying } />
             ) }
-            <div className="z-40">
+            <div className="z-40 border-b">
                 <header className="flex items-center justify-between px-6 md:px-8 max-w-7xl mx-auto">
                     <a href="#home" className="hover:opacity-80">
                         <img src="/assets/images/logo.png" className="w-48" alt="" />
                     </a>
-                    <div className="hidden md:flex items-center gap-x-6">
+                    <div className="hidden text-lg md:flex items-center gap-x-6">
                         <a href="#services" rel='' className="hover:text-[#fc5c04]">Services</a>
                         <a href="#about" className="hover:text-[#fc5c04]">À propos de nous</a>
                         <a href="#portfolio" className="hover:text-[#fc5c04]">Projects</a>
                     </div>
                     <div className="space-x-4 flex items-center">
                         <a href="#contact">
-                            <div className="p-2 md:p-3 bg-primary text-[12px] text-white rounded-md hover:opacity-80">
+                            <div className="p-2 md:p-3 bg-primary text-md text-white rounded-md hover:opacity-80">
                                 Contacter-Nous
                             </div>
                         </a>
@@ -45,17 +45,17 @@ function Home() {
                 <main className="flex items-center max-w-7xl mx-auto justify-center px-6 md:px-8">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-16">
                         <div className="flex-col space-y-8 my-auto">
-                            <h1 className="text-4xl font-extrabold leading-10 tracking-tight text-gray-900 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl">
+                            <h1 className="text-4xl font-extrabold leading-10 tracking-tight sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl">
                                 Nou sommes une agence en développement de conception Web et mobile.
                             </h1>
-                            <p className="font-normal text-gray-500">
+                            <p className="font-normal text-lg">
                                 Nous abordons chaque projet avec ténacité. Notre priorité est d'écrire du code propre et de vous offrir le meilleur produit possible. L'accessibilité et la diligence de notre équipe nous distinguent - la volonté authentique de chaque individu d'améliorer ses compétences et d'exceller dans la performance globale.
                             </p>
                             <div className="flex-wrap gap-y-4 flex items-center gap-x-2">
-                                <button className="p-3 md:p-4 bg-primary text-[12px] text-white rounded-md flex items-center gap-x-2 hover:opacity-80"
+                                <button className="p-3 text-center w-32 bg-primary text-[12px] text-white rounded-md flex items-center gap-x-2 hover:opacity-80 text-lg font-normal"
                                     onClick={ () => setIsPlaying(!isPlaying) }
                                 >
-                                    <p className="">
+                                    <p className="text-center w-full text-[16px]">
                                         Voir la démo
                                     </p>
                                 </button>
@@ -65,7 +65,7 @@ function Home() {
                             </div>
                         </div>
                         <div className="grid grid-cols-2 gap-4 md:gap-7">
-                            <div className="row-span-2 bg-cover h-[300px] lg:h-[500px] shadow-lg"
+                            <div className="row-span-2 bg-cover h-[300px] lg:h-full shadow-lg"
                                 style={ { backgroundImage: `url("assets/images/meeting.jpg")` } }
                             ></div>
                             <div className="bg-cover shadow-lg"

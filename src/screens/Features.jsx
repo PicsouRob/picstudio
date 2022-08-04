@@ -5,13 +5,13 @@ function Features({ data, title, text, image }) {
   return (
     <div id="features" className="pb-12 mx-auto max-w-7xl">
         <main className="flex items-cente justify-center">
-            <div className="flex-col space-y-5 w-full shadow-md rounded-br-3xl">
+            <div className="flex flex-col space-y-5 w-full shadow-md rounded-br-3xl">
                 <img src={image} alt="" className="h-[200px] w-full bg-cover bg-center object-cover" />
-                <div className="p-4 space-y-5">
+                <div className="p-4 space-y-5 flex-1">
                     <h1 className="text-2xl font-bold leading-8">
                             {title}
                     </h1>
-                    <p className="text-gray-700 font-normal">
+                    <p className="text-gray-700 text-lg font-normal">
                         {text}
                     </p>
                     <div className="grid grid-cols-2 gap-x-4 w-full">

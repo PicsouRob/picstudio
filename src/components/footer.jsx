@@ -1,6 +1,6 @@
 import React from 'react';
 import { resources, useFullLinks, socialLink } from '../helpers/footer_data';
-import FooterUseFullLink from './footer_usefull_link';
+import FooterUseFullLink from './FooterUseFullLink';
 
 function footer() {
   return (

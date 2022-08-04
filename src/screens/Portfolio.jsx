@@ -36,7 +36,7 @@ function Portfolio() {
                                     <div className="text-[#fc5c04] font-semibold">{ info.desc }</div>
                                     <span className="text-xl lg:text-2xl font-bold">{info.title}</span>
                                     <div className="pt-4 mb-3">
-                                        <a href={info.url} target="_blank" rel="noreferrer" className="rounded-lg border px-6 py-3">Voir Details</a>
+                                        <a href={info.url} target="_blank" rel="noreferrer" className="rounded-lg border px-6 py-3 hover:bg-gray-100">Voir Details</a>
                                     </div>
                                 </div>
                             </div>
